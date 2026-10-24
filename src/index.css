@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+/* Fixes the background to fill the screen behind everything */
+.shader-frame {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* Pulls the canvas behind your content layer */
+  pointer-events: none; /* Allows mouse clicks to pass right through the canvas */
+}
+
+/* Positions your content cleanly on top */
+.content-layer {
+  position: relative;
+  z-index: 1; /* Elevates text/buttons over the background */
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 40px;
+
+  /* Optional styling for legibility */
+  color: #ffffff;
+}
