@@ -4,6 +4,8 @@ import react from "@vitejs/plugin-react"; // Example plugin for React
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
+  base: "/Portfolio/",
+
   // 1. Plugins
   plugins: [react(), tailwindcss()],
 
